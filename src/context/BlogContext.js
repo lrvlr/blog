@@ -3,7 +3,7 @@ import jsonServer from "../api/jsonServer";
 
 const blogReducer = (state, action) => {
     switch (action.type) {
-        case 'get_blogsposts':
+        case 'get_blogposts':
             return action.payload;
         case 'delete_blogpost':
             return state.filter((blogPost) => blogPost.id !== action.payload);
